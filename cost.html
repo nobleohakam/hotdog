@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Joe's Cost Counter</title>
+        <script src="cost.js"></script>
+        <link rel="stylesheet" type="text/css" href="cost.css">
+    </head>
+    <body>
+        <h1>Here is your order</h1>
+        <p>Number of Hot Dogs:</p>
+        <p id="hotdogs"></p>
+        <p>Number of Fries:</p>
+        <p id="fries"></p>
+        <p>Number of Sodas:</p>
+        <p id="sodas"></p>
+        <p>Price of Food</p>
+        <p id="st"></p>
+        <p>Subtotal + Discount Price</p>
+        <p id="discount"></p>
+        <p>Subtotal + Discount Price + Massachuesetts Tax </p>
+        <p id="massTax"></p>
+        <script type="text/javascript">
+            document.getElementById("hotdogs").innerHTML = num_hotdogs;
+            document.getElementById("fries").innerHTML = num_fries;
+            document.getElementById("sodas").innerHTML = num_soda;
+            document.getElementById("st").innerHTML = sub_total.toFixed(2);
+            document.getElementById("discount").innerHTML = discount_total.toFixed(2);
+            document.getElementById("massTax").innerHTML = total_massTax.toFixed(2);
+        </script>
+
+    </body>
+</html>
